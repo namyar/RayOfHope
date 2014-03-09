@@ -38,7 +38,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development , :test do
+group :development do
   gem 'sqlite3'
   gem 'thin'
 end
@@ -59,3 +59,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ruby "2.1.0"
