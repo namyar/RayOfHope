@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RayOfHope::Application.config.secret_key = 'c88c5775303d3d2239b00af0e6471e33cfd82056ec54cb550376f59f6d48f759ab831e5f4e1934429208c889b0010629caae6c988c5f5e8cf8be65a3a11785fa'
+RayOfHope::Application.config.secret_key_base = 'a22180cd6fccae58f9df114df9455bb4ee96ccf90a5ae530ac7f2a2a89cd22f37cf4a05a9e00331c15dd9cfa80ae85c4af118851dd7cbaf9a35b1d9bdb384304'
