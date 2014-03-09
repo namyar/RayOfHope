@@ -1,24 +1,27 @@
+<button type="button" class="btn btn-default"><%= link_to 'Back', children_path %></button>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @child.name %>
-</p>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @child.gender %>
-</p>
+<div id="show-columns">
+		<div class="show-pin">
+			<p>
+  				<strong>Name:</strong>
+  				<%= @child.name %>
+			</p>
+			<%= image_tag(@child.med_image)%>
+			
+			<p>
+				<strong>Gender:</strong>
+				<%= @child.gender %>
+			</p>
+			<p>
+				<strong>Age:</strong>
+				<%= @child.age %>
+			</p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @child.age %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @child.description %>
-</p>
-
-<%= link_to 'Edit', edit_child_path(@child) %> |
-<%= link_to 'Back', children_path %>
+			<p>
+				<strong>Description:</strong>
+				<%= @child.description %>
+			</p>
+		</div>
+</div>

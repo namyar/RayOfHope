@@ -1,31 +1,18 @@
-<h1>Listing children</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Gender</th>
-      <th>Age</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @children.each do |child| %>
-      <tr>
-        <td><%= child.name %></td>
-        <td><%= child.gender %></td>
-        <td><%= child.age %></td>
-        <td><%= child.description %></td>
-        <td><%= link_to 'Show', child %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Child', new_child_path %>
+<div id="wrapper" >
+<h2>Pizza and Kittens for You!!</h2>
+  <div id="columns col-lg-12 col-md-12 col-sm-12 col-centered">
+    <% @instance_children.each do |child| %>
+    <div class="pin">
+      <%= image_tag(child.med_image) %>
+      <b><%= child.name %></b>
+      <p>
+        Age: <%= child.age %> 
+      </p>
+      <p>
+        Gender <%= child.gender%>
+      </p>
+      <p><%= link_to 'More', child %></p>
+    </div>
+    <%end%>
+  </div>
+</div>

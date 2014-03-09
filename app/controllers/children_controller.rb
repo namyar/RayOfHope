@@ -4,7 +4,7 @@ class ChildrenController < InheritedResources::Base
   # GET /children
   # GET /children.json
   def index
-    @children = Child.all
+    @instance_children = Child.all
   end
 
   # GET /children/1
@@ -18,9 +18,6 @@ class ChildrenController < InheritedResources::Base
   end
 
   # GET /children/1/edit
-  def edit
-  end
-
   # POST /children
   # POST /children.json
   def create
